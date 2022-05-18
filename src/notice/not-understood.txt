@@ -1,0 +1,21 @@
+
+
+  @ViewChild('ngFileSelect',{ read: ElementRef})
+
+  ==================
+
+  CalendarModule.forRoot({ provide: DateAdapter, useFactory: adapterFactory })
+  
+  ==================
+Content Projection
+
+Component Lifecycle Hooks
+
+View Children vs. Content Children
+  ==================
+
+  ==================
+
+  ==================
+
+  ==================

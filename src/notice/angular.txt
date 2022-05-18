@@ -1,0 +1,34 @@
+NgStyle gives you fine grained control on individual properties. But if you want to make changes to multiple properties at once, 
+creating a class which bundles those properties and adding the class with NgClass makes more sense.
+
+- [ngClass]
+
+[ngClass]="status ? 'success' : 'danger'"
+
+<li [ngClass]="{
+    'text-success':person.country === 'UK',
+    'text-primary':person.country === 'USA',
+    'text-danger':person.country === 'HK'
+  }">
+
+  [class]="'text-success'"
+
+  [class.<class-name>]='truthy expression'
+  [class.text-success]="true"
+=============================================
+
+  - [ngStyle]
+
+  <li [style.color]="getColor(person.country)">
+
+  [ngStyle]="{'font-size':24px }"
+  [style.font-size.px]="24"
+  [style.font-size]="24px"
+  
+=============================================
+
+Directives are components without a view.
+They are components without a template. Or to put it another way
+
+
+=============================================
